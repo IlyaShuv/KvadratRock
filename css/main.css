@@ -38,6 +38,10 @@ body {
 	clear: both;
 }
 
+.center {
+	text-align: center;
+}
+
 .smallText{
 	font-size: 22px;
 }
@@ -81,6 +85,24 @@ h1 {
 	color: #542B87;
 }
 
+.aboutMain {
+	margin: 70px;
+}
+
+.links {
+	text-align: center;
+	margin-bottom: 60px;
+}
+
+.mainVideo {
+	margin-bottom: 50px;
+}
+
+#program {
+	padding-top: 20px;
+	padding-bottom: 50px;
+	background: #F2F2F2;
+}
 
 
 
