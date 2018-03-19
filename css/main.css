@@ -80,13 +80,18 @@ h1 {
 	margin-top: 0;
 }
 
+#about {
+	background: #F2F2F2;
+	padding-top: 60px;
+}
+
 .iconSocial {
 	font-size: 4em;
 	color: #542B87;
 }
 
 .aboutMain {
-	margin: 70px;
+	margin-bottom: 70px;
 }
 
 .links {
@@ -95,13 +100,50 @@ h1 {
 }
 
 .mainVideo {
-	margin-bottom: 50px;
+	padding-bottom: 50px;
 }
 
 #program {
 	padding-top: 20px;
 	padding-bottom: 50px;
+}
+
+#program h2 {
+	margin-bottom: 30px;
+}
+
+#program p {
+	margin-bottom: 40px;
+}
+
+.dotCircle {
+	color: #e1e1e1;
+	font-size: 1em;
+}
+
+.verLine {
+	width: 3px;
+	background-color: #e1e1e1;
+}
+
+#program table {
+	font-size: 35px;
+}
+
+#program td {
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-bottom: 20px;
+}
+
+.member {
+	font-weight: bold;
+}
+
+#last {
 	background: #F2F2F2;
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
 
 
