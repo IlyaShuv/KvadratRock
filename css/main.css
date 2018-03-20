@@ -81,7 +81,6 @@ h1 {
 }
 
 #about {
-	background: #F2F2F2;
 	padding-top: 60px;
 }
 
@@ -106,6 +105,7 @@ h1 {
 #program {
 	padding-top: 20px;
 	padding-bottom: 50px;
+	background: #F2F2F2;
 }
 
 #program h2 {
@@ -114,16 +114,12 @@ h1 {
 
 #program p {
 	margin-bottom: 40px;
+	color: #542B87;
 }
 
 .dotCircle {
-	color: #e1e1e1;
-	font-size: 1em;
-}
-
-.verLine {
-	width: 3px;
-	background-color: #e1e1e1;
+	color: #542B87;
+	font-size: 26px;
 }
 
 #program table {
@@ -140,10 +136,24 @@ h1 {
 	font-weight: bold;
 }
 
-#last {
-	background: #F2F2F2;
+#photo-wall {
+	background: #121212;
 	padding-top: 30px;
 	padding-bottom: 30px;
+	color: white;
+}
+
+.gallery {
+	text-align: center;
+}
+
+.gallery img {
+	margin: 1px;
+	border: 3px solid #FFF;
+}
+
+a.photo:hover img{
+	border: 3px solid #754CA8;
 }
 
 

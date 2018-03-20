@@ -7,10 +7,35 @@
 	<meta charset="utf-8">
 
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
 
 	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l" crossorigin="anonymous"></script> 
 	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/brands.js" integrity="sha384-sCI3dTBIJuqT6AwL++zH7qL8ZdKaHpxU43dDt9SyOzimtQ9eyRhkG3B7KMl6AO19" crossorigin="anonymous"></script> 
 	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="JS/jquery.fancybox.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$("a.photo").fancybox({
+				transitionIn: 'elastic',
+				transitionOut: 'elastic',
+				backFocus: false,
+				btnTpl : {
+					arrowLeft : '<button data-fancybox-prev class="fancybox-button fancybox-button--arrow_left" title="{{PREV}}">' +
+                       	 '<svg viewBox="0 0 40 40">' +
+                       	   '<path d="M10,20 L30,20 L10,20 L18,28 L10,20 L18,12 L10,20"></path>' +
+                       	 '</svg>' +
+                      	'</button>',
+
+        	arrowRight : '<button data-fancybox-next class="fancybox-button fancybox-button--arrow_right" title="{{NEXT}}">' +
+                      	'<svg viewBox="0 0 40 40">' +
+                      	  '<path d="M30,20 L10,20 L30,20 L22,28 L30,20 L22,12 L30,20"></path>' +
+                     	 '</svg>' +
+                    	'</button>'
+    		},
+			});
+		});
+	</script>
 </head>
 
 <body>
@@ -29,7 +54,7 @@
 	<section id="about">
 		<div class="container">
 
-			<p class="medText center aboutMain">Квадрат рока - музыкальный фестиваль, созданный специально для школьников</p>
+			<p class="medText center aboutMain">Квадрат рока - музыкальный фестиваль, созданный специально для школьников.</p>
 			<div class="links">
 				<a href="http://vk.com/kvadratrock"><i class="fab fa-vk iconSocial"></i></a>
 				<a href="http://instagram.com/kvadratrock"><i class="fab fa-instagram iconSocial"></i></a>
@@ -73,7 +98,7 @@
 				<tr>
 				</tr>
 				<tr>
-					<td>16:00</td>
+					<td>21:00</td>
 					<td><i class="fas fa-dot-circle dotCircle"></i></td>
 					<td class="member">Закрытие фестиваля</td>
 				</tr>
@@ -82,10 +107,28 @@
 		</div>
 	</section>
 
-	<section id="last">
+	<section id="photo-wall">
 		<div class="container">
-
+			
 			<h2 class="bigText center"> Как это было</h2>
+			
+			<div class="gallery">
+			<a rel="gallery" class="photo" href="img/gallery/1.jpg"><img src="img/gallery/1.jpg" width="250" alt=""></a>
+			<a rel="gallery" class="photo" href="img/gallery/3.jpg"><img src="img/gallery/3.jpg" width="250" alt=""></a>
+			<a rel="gallery" class="photo" href="img/gallery/7.jpg"><img src="img/gallery/7.jpg" width="250" alt=""></a><br>
+
+			<a rel="gallery" class="photo" href="img/gallery/2.jpg"><img src="img/gallery/2.jpg" width="250" alt=""></a>
+			<a rel="gallery" class="photo" href="img/gallery/8.jpg"><img src="img/gallery/8.jpg" width="250" alt=""></a>
+			<a rel="gallery" class="photo" href="img/gallery/4.jpg"><img src="img/gallery/4.jpg" width="250" alt=""></a><br>
+
+			<a rel="gallery" class="photo" href="img/gallery/5.jpg"><img src="img/gallery/5.jpg" width="250" alt=""></a>
+			<a rel="gallery" class="photo" href="img/gallery/9.jpg"><img src="img/gallery/9.jpg" width="250" alt=""></a>
+			<a rel="gallery" class="photo" href="img/gallery/11.jpg"><img src="img/gallery/11.jpg" width="250" alt=""></a><br>
+
+			<a rel="gallery" class="photo" href="img/gallery/10.jpg"><img src="img/gallery/10.jpg" width="250" alt=""></a>
+			<a rel="gallery" class="photo" href="img/gallery/6.jpg"><img src="img/gallery/6.jpg" width="250" alt=""></a>
+			<a rel="gallery" class="photo" href="img/gallery/12.jpg"><img src="img/gallery/12.jpg" width="250" alt=""></a><br>
+			</div>
 
 		</div>
 	</section>
