@@ -65,8 +65,37 @@ header {
 	text-align: center;
 }
 
+nav {
+	padding-top: 30px;
+}
+
+.menu {
+	padding: 0;
+	margin: 0;
+}
+
+.menu li {
+	float: left;
+	display: block;
+	margin-right: 40px;
+}
+
+.menu li a {
+	color: white;
+	text-decoration: none;
+	font-size: 25px;
+}
+
+.menu li p {
+	display: block;
+	float: right;
+	font-size: 30px;
+	margin: 0;
+	margin-left: 200px;
+}
+
 .mainLogo{
-	margin-top: 14vh;
+	margin-top: 8vh;
 	width: 350px;
 }
 
@@ -117,9 +146,8 @@ h1 {
 	color: #542B87;
 }
 
-.dotCircle {
-	color: #542B87;
-	font-size: 26px;
+table img {
+	height: 52px;
 }
 
 #program table {
@@ -154,6 +182,50 @@ h1 {
 
 a.photo:hover img{
 	border: 3px solid #754CA8;
+}
+
+#place {
+	background: #F2F2F2;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+#place p {
+	margin-bottom: 30px;
+	font-size: 35px;
+}
+
+#place a {
+	text-align: center;
+	text-decoration: none;
+	color: #542B87;
+	display: block;
+	font-size: 30px;
+	margin-bottom: 30px;
+	margin-top: 0;
+}
+
+#place img {
+	margin-left: 62px;
+}
+
+#contacts {
+	background: #242424;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	color: white;
+}
+
+#contacts p {
+	font-size: 30px;
+	margin: 10px;
+}
+
+footer {
+	padding: 0;
+	margin: 0;
+	background: black;
+	color: #F2F2F2;
 }
 
 

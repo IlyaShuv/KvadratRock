@@ -20,19 +20,15 @@
 				transitionIn: 'elastic',
 				transitionOut: 'elastic',
 				backFocus: false,
-				btnTpl : {
-					arrowLeft : '<button data-fancybox-prev class="fancybox-button fancybox-button--arrow_left" title="{{PREV}}">' +
-                       	 '<svg viewBox="0 0 40 40">' +
-                       	   '<path d="M10,20 L30,20 L10,20 L18,28 L10,20 L18,12 L10,20"></path>' +
-                       	 '</svg>' +
-                      	'</button>',
-
-        	arrowRight : '<button data-fancybox-next class="fancybox-button fancybox-button--arrow_right" title="{{NEXT}}">' +
-                      	'<svg viewBox="0 0 40 40">' +
-                      	  '<path d="M30,20 L10,20 L30,20 L22,28 L30,20 L22,12 L30,20"></path>' +
-                     	 '</svg>' +
-                    	'</button>'
-    		},
+				arrows: true,
+				loop: true,
+				buttons : [
+        'slideShow',
+        'fullScreen',
+        //'download',
+        //'zoom',
+        'close'
+    ],
 			});
 		});
 	</script>
@@ -42,6 +38,23 @@
 
 	<header>
 		<div class="container">
+
+			<nav>
+				<ul class="menu">
+					<li>
+						<a href="#schedule">РАСПИСАНИЕ</a>
+					</li>
+					<li>
+						<a href="#place">МЕСТО</a>
+					</li>
+					<li>
+						<a href="#contacts">КОНТАКТЫ</a>
+					</li>
+					<li>
+						<p>+7 915 777 77 77</p>
+					</li>
+				</ul>
+			</nav>
 
 			<img class='mainLogo' src="img/logo.png">
 			<h1>Квадрат рока 2018</h1>
@@ -69,6 +82,7 @@
 		</div>
 	</section>
 
+	<a name="schedule"></a>
 	<section id="program">
 		<div class="container">
 
@@ -78,28 +92,41 @@
 			<table align="center">
 				<tr>
 					<td>14:00</td>
-					<td><i class="fas fa-dot-circle dotCircle"></i></td>
+					<td><img src="img/eguitar.png"></td>
 					<td class="member">Открытие фестиваля</td>
 				</tr>
 				<tr>
+					<td></td>
+					<td></td>
+					<td class="smallText">Комментарии...</td>
 				</tr>
 				<tr>
 					<td>15:00</td>
-					<td><i class="fas fa-dot-circle dotCircle"></i></td>
+					<td><img src="img/eguitar.png"></td>
 					<td class="member">Коллектив 1</td>
 				</tr>
 				<tr>
+					<td></td>
+					<td></td>
+					<td class="smallText">Комментарии...</td>
 				</tr>
 				<tr>
 					<td>16:00</td>
-					<td><i class="fas fa-dot-circle dotCircle"></i></td>
+					<td><img src="img/eguitar.png"></td>
 					<td class="member">Коллектив 2</td>
 				</tr>
 				<tr>
 				</tr>
 				<tr>
+					<td>17:00</td>
+					<td><img src="img/eguitar.png"></td>
+					<td class="member">Коллектив 3</td>
+				</tr>
+				<tr>
+				</tr>
+				<tr>
 					<td>21:00</td>
-					<td><i class="fas fa-dot-circle dotCircle"></i></td>
+					<td><img src="img/eguitar.png"></td>
 					<td class="member">Закрытие фестиваля</td>
 				</tr>
 			</table>
@@ -133,26 +160,33 @@
 		</div>
 	</section>
 
-	<section>
+	<a name="place"></a>
+	<section id="place">
 		<div class="container">
+			<h2 class="bigText center">Место проведения</h2>
+			<p class="center">В 2018 году фестиваль Квадрат рока проходит<br>
+			в клубе Вольта, расположенного по адресу:
+			<br>Москва, Бумажный проезд 19, стр 3<br>
+			(м. Савёловская).<br></p>
+			<a href="http://voltaclub.ru">voltaclub.ru</a>
+			<img src="http://voltaclub.ru/files/map2.png" alt="Схема прохода к клубу">
 
 		</div>
 	</section>
 
-	<section>
+	<a name="contacts"></a>
+	<section id="contacts">
 		<div class="container">
-
-		</div>
-	</section>
-
-	<section>
-		<div class="container">
-
+			<h2 class="bigText center">Контакты</h2>
+			<p class="center">Контактный телефон: +7 915 777 77 77</p>
+			<p class="center">Леонид Иванов</p>
+			<p class="center">Почта: kvadratsolo.....</p>
 		</div>
 	</section>
 
 	<footer>
 		<div class="container">
+			<p class="smallText center">Партнеры:</p>
 
 		</div>
 	</footer>
