@@ -29,6 +29,7 @@ body {
 .container {
 	width: 960px;
 	margin: 0 auto;
+	/*border: yellow solid thin;*/
 }
 
 .clearfix:after {
@@ -60,7 +61,7 @@ body {
 
 header {
 	height: 100vh;
-	background: #1A1414 url('../img/background.jpg') no-repeat center center / cover;
+	background: #1A1414 url('../img/background2.png') no-repeat center center / cover;
 	color: white;
 	text-align: center;
 }
@@ -71,36 +72,50 @@ nav {
 
 .menu {
 	padding: 0;
+	padding-top: 6px;
 	margin: 0;
 }
 
 .menu li {
 	float: left;
 	display: block;
-	margin-right: 40px;
+	margin-right: 28px;
 }
 
-.menu li a {
+.menuItem {
 	color: white;
 	text-decoration: none;
-	font-size: 25px;
+	font-size: 22px;
 }
 
 .menu li p {
 	display: block;
 	float: right;
-	font-size: 30px;
+	font-size: 24px;
 	margin: 0;
-	margin-left: 200px;
+}
+
+.reg {
+	border: white thin solid;
+	border-radius: 16px;
+	background: white;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	padding-right: 14px;
+	padding-left: 14px;
+	color: #542B87;
+	font-size: 22px;
+	text-decoration: none;
 }
 
 .mainLogo{
-	margin-top: 8vh;
-	width: 350px;
+	margin-top: 9vh;
+	margin-bottom: 6vh;
+	width: 320px;
 }
 
 h1 {
-	font-size: 60px;
+	font-size: 66px;
 	margin-top: 0;
 	margin-bottom: 3vh;
 }
@@ -111,6 +126,7 @@ h1 {
 
 #about {
 	padding-top: 60px;
+	background: #FAFAFA;
 }
 
 .iconSocial {
@@ -134,7 +150,7 @@ h1 {
 #program {
 	padding-top: 20px;
 	padding-bottom: 50px;
-	background: #F2F2F2;
+	background: #ECECEC;
 }
 
 #program h2 {
@@ -185,7 +201,7 @@ a.photo:hover img{
 }
 
 #place {
-	background: #F2F2F2;
+	background: #ECECEC;
 	padding-top: 30px;
 	padding-bottom: 30px;
 }
@@ -209,23 +225,44 @@ a.photo:hover img{
 	margin-left: 62px;
 }
 
+#reg{
+
+}
+
+#reg p {
+	font-size: 24px;
+	margin: 20px;
+	margin-bottom: 30px;
+}
+
 #contacts {
-	background: #242424;
-	padding-top: 30px;
-	padding-bottom: 30px;
+	background: #373737;
+	padding-top: 20px;
+	padding-bottom: 50px;
 	color: white;
 }
 
 #contacts p {
 	font-size: 30px;
-	margin: 10px;
+	margin: 20px;
 }
 
 footer {
 	padding: 0;
 	margin: 0;
-	background: black;
-	color: #F2F2F2;
+	background: #121212;
+	color: #754CA8;
+	padding-top: 1px;
+	padding-bottom: 20px;
+}
+
+footer p {
+	font-size: 26px;
+}
+
+footer img {
+	height: 80px;
+	padding-left: 60px;
 }
 
 

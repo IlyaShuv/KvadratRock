@@ -42,16 +42,19 @@
 			<nav>
 				<ul class="menu">
 					<li>
-						<a href="#schedule">РАСПИСАНИЕ</a>
+						<a class="menuItem" href="#schedule">ПРОГРАММА</a>
 					</li>
 					<li>
-						<a href="#place">МЕСТО</a>
+						<a class="menuItem" href="#place">МЕСТО ПРОВЕДЕНИЯ</a>
 					</li>
 					<li>
-						<a href="#contacts">КОНТАКТЫ</a>
+						<a class="menuItem" href="#contacts">КОНТАКТЫ</a>
 					</li>
 					<li>
-						<p>+7 915 777 77 77</p>
+						<a class="reg" href="#registration" class="reg">РЕГИСТРАЦИЯ</a>
+					</li>
+					<li>
+						<p>+7 926 132 44 40</p>
 					</li>
 				</ul>
 			</nav>
@@ -163,6 +166,7 @@
 	<a name="place"></a>
 	<section id="place">
 		<div class="container">
+
 			<h2 class="bigText center">Место проведения</h2>
 			<p class="center">В 2018 году фестиваль Квадрат рока проходит<br>
 			в клубе Вольта, расположенного по адресу:
@@ -174,11 +178,33 @@
 		</div>
 	</section>
 
+	<a name="reg"></a>
+	<section id="reg">
+		<div class="container">
+
+			<h2 class="bigText center">Регистрация</h2>
+			<p class="center">Если вы хотите посетить наш фестиваль, пожалуйста зарегестрируйтесь заранее через форму расположенную ниже</p>
+
+			<form action="tele.php" method="POST">
+				<input class="inputRequest" type="text" name="userName" placeholder="Ваше имя" maxlength="100" required><br>
+				<input class="inputRequest" type="text" name="userPhone" placeholder="Ваш телефон" maxlength="12" required><br>
+				<input class="inputRequest" type="text" name="userEmail" placeholder="Ваш E-mail" maxlength="100"><br>
+				<div class="confirm"><input type="checkbox" name="checkBox" id="agree" value="yes">
+				  Отправляя сообщение, я принимаю пользовательское
+				  соглашение и подтверждаю, что ознакомлен и согласен 
+					с политикой конфиденциальности данного сайта</div>
+				<button class="butt send" type="submit" id="continue">Отправить заявку</button>
+			</form>
+		
+		</div>
+	</section>
+
+
 	<a name="contacts"></a>
 	<section id="contacts">
 		<div class="container">
 			<h2 class="bigText center">Контакты</h2>
-			<p class="center">Контактный телефон: +7 915 777 77 77</p>
+			<p class="center">Контактный телефон: +7 926 312 44 40</p>
 			<p class="center">Леонид Иванов</p>
 			<p class="center">Почта: kvadratsolo.....</p>
 		</div>
@@ -186,8 +212,11 @@
 
 	<footer>
 		<div class="container">
-			<p class="smallText center">Партнеры:</p>
-
+			<p class="center">Партнеры:</p>
+			<div class="partners">
+				<a href="http://kvadratsolo.ru"><img src="img/logosolo.png"></a>
+				<a href="http://kvadratsolo.ru"><img src="img/eguitar.png"></a>
+			</div>
 		</div>
 	</footer>
 
