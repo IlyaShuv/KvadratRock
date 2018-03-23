@@ -8,12 +8,16 @@
 
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
+	<link rel="icon" type="video/png" href="img/favicon.png">
 
 	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l" crossorigin="anonymous"></script> 
 	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/brands.js" integrity="sha384-sCI3dTBIJuqT6AwL++zH7qL8ZdKaHpxU43dDt9SyOzimtQ9eyRhkG3B7KMl6AO19" crossorigin="anonymous"></script> 
 	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 	<script src="JS/jquery.fancybox.min.js"></script>
+
+	<script type="text/javascript" src="JS/confirm.js"></script>
+
 	<script>
 		$(document).ready(function() {
 			$("a.photo").fancybox({
@@ -31,6 +35,10 @@
     ],
 			});
 		});
+	</script>
+
+	<script>
+		Confirm();
 	</script>
 </head>
 
@@ -51,7 +59,7 @@
 						<a class="menuItem" href="#contacts">КОНТАКТЫ</a>
 					</li>
 					<li>
-						<a class="reg" href="#registration" class="reg">РЕГИСТРАЦИЯ</a>
+						<a class="reg" href="#reg" class="reg">РЕГИСТРАЦИЯ</a>
 					</li>
 					<li>
 						<p>+7 926 132 44 40</p>
@@ -183,17 +191,22 @@
 		<div class="container">
 
 			<h2 class="bigText center">Регистрация</h2>
-			<p class="center">Если вы хотите посетить наш фестиваль, пожалуйста зарегестрируйтесь заранее через форму расположенную ниже</p>
+			<p class="center">Если вы хотите посетить наш фестиваль,<br>
+			пожалуйста зарегестрируйтесь через форму</p>
+			<div class="iconArrow">
+				<i class="fas fa-arrow-down"></i>
+			</div>
 
 			<form action="tele.php" method="POST">
 				<input class="inputRequest" type="text" name="userName" placeholder="Ваше имя" maxlength="100" required><br>
+				<input class="inputRequest" type="text" name="userSurname" placeholder="Ваша фамилия" maxlength="100" required><br>
 				<input class="inputRequest" type="text" name="userPhone" placeholder="Ваш телефон" maxlength="12" required><br>
 				<input class="inputRequest" type="text" name="userEmail" placeholder="Ваш E-mail" maxlength="100"><br>
 				<div class="confirm"><input type="checkbox" name="checkBox" id="agree" value="yes">
 				  Отправляя сообщение, я принимаю пользовательское
 				  соглашение и подтверждаю, что ознакомлен и согласен 
 					с политикой конфиденциальности данного сайта</div>
-				<button class="butt send" type="submit" id="continue">Отправить заявку</button>
+				<button class="button" type="submit" id="continue">Отправить заявку</button>
 			</form>
 		
 		</div>
@@ -206,7 +219,7 @@
 			<h2 class="bigText center">Контакты</h2>
 			<p class="center">Контактный телефон: +7 926 312 44 40</p>
 			<p class="center">Леонид Иванов</p>
-			<p class="center">Почта: kvadratsolo.....</p>
+			<p class="center">Почта: kvadratsolo...</p>
 		</div>
 	</section>
 

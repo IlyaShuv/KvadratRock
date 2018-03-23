@@ -183,7 +183,7 @@ table img {
 #photo-wall {
 	background: #121212;
 	padding-top: 30px;
-	padding-bottom: 30px;
+	padding-bottom: 60px;
 	color: white;
 }
 
@@ -203,7 +203,7 @@ a.photo:hover img{
 #place {
 	background: #ECECEC;
 	padding-top: 30px;
-	padding-bottom: 30px;
+	padding-bottom: 50px;
 }
 
 #place p {
@@ -217,8 +217,8 @@ a.photo:hover img{
 	color: #542B87;
 	display: block;
 	font-size: 30px;
-	margin-bottom: 30px;
 	margin-top: 0;
+	padding-bottom: 30px;
 }
 
 #place img {
@@ -226,13 +226,56 @@ a.photo:hover img{
 }
 
 #reg{
-
+	padding-top: 30px;
+	padding-bottom: 40px;
+	background: #FAFAFA;
 }
 
 #reg p {
 	font-size: 24px;
 	margin: 20px;
 	margin-bottom: 30px;
+}
+
+.iconArrow {
+	text-align: center;
+	font-size: 32px;
+	color: #542B87;
+}
+
+.inputRequest {
+	margin-top: 20px;
+	margin-left: 170px;
+	width: 580px;
+	padding: 10px;
+	font-size: 25px;
+}
+
+.button {
+	border: solid thin #542B87;
+	border-radius: 26px;
+	font-size: 28px;
+	margin-top: 40px;
+	margin-left: 330px;
+	background: #542B87;
+	color: white;
+	width: 300px;
+	padding: 10px;
+}
+
+.button:disabled {
+	background: #DDD;
+	border-color: #DDD;
+}
+
+.confirm {
+	margin-top: 20px;
+	margin-left: 165px;
+	width: 600px;
+	padding: 10px;
+	font-size: 21px;
+	color: #542B87;
+	text-align: center;
 }
 
 #contacts {
