@@ -9,6 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
 	<link rel="icon" type="video/png" href="img/favicon.png">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
 
 	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l" crossorigin="anonymous"></script> 
 	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/brands.js" integrity="sha384-sCI3dTBIJuqT6AwL++zH7qL8ZdKaHpxU43dDt9SyOzimtQ9eyRhkG3B7KMl6AO19" crossorigin="anonymous"></script> 
@@ -17,6 +18,7 @@
 	<script src="JS/jquery.fancybox.min.js"></script>
 
 	<script type="text/javascript" src="JS/confirm.js"></script>
+	<script type="text/javascript" src="JS/scroll.js"></script>
 
 	<script>
 		$(document).ready(function() {
@@ -39,6 +41,7 @@
 
 	<script>
 		Confirm();
+		scrollAnimate();
 	</script>
 </head>
 
@@ -48,7 +51,7 @@
 		<div class="container">
 
 			<nav>
-				<ul class="menu">
+				<ul class="menu animated fadeInDown">
 					<li>
 						<a class="menuItem" href="#schedule">ПРОГРАММА</a>
 					</li>
@@ -68,9 +71,9 @@
 			</nav>
 
 			<img class='mainLogo' src="img/logo.png">
-			<h1>Квадрат рока 2018</h1>
+			<h1 class="animated fadeIn">Квадрат рока 2018</h1>
 			<p class = "headDiscr medText">Третий ежегодный фестиваль школьных рок-групп</p>
-			<p class="when smallText">25 апреля | клуб Вольта</p>
+			<p class="center smallText animated slideInUp">25 апреля | клуб Вольта</p>
 
 		</div>
 	</header>
@@ -80,8 +83,8 @@
 
 			<p class="medText center aboutMain">Квадрат рока - музыкальный фестиваль, созданный специально для школьников.</p>
 			<div class="links">
-				<a href="http://vk.com/kvadratrock"><i class="fab fa-vk iconSocial"></i></a>
-				<a href="http://instagram.com/kvadratrock"><i class="fab fa-instagram iconSocial"></i></a>
+				<a href="http://vk.com/kvadratrock"><i class="fab fa-vk iconSocial mov hidden fadeIn"></i></a>
+				<a href="http://instagram.com/kvadratrock"><i class="fab fa-instagram iconSocial mov hidden fadeIn"></i></a>
 			</div>
 			
 			<div class="center mainVideo">
@@ -98,7 +101,7 @@
 		<div class="container">
 
 			<h2 class="bigText center">Программа</h2>
-			<p class="smallText center">25 апреля</p>
+			<p class="smallText center mov hidden fadeIn">25 апреля</p>
 
 			<table align="center">
 				<tr>
@@ -180,7 +183,7 @@
 			в клубе Вольта, расположенного по адресу:
 			<br>Москва, Бумажный проезд 19, стр 3<br>
 			(м. Савёловская).<br></p>
-			<a href="http://voltaclub.ru">voltaclub.ru</a>
+			<a class="mov hidden fadeIn" href="http://voltaclub.ru">voltaclub.ru</a>
 			<img src="http://voltaclub.ru/files/map2.png" alt="Схема прохода к клубу">
 
 		</div>
@@ -194,7 +197,7 @@
 			<p class="center">Если вы хотите посетить наш фестиваль,<br>
 			пожалуйста зарегестрируйтесь через форму</p>
 			<div class="iconArrow">
-				<i class="fas fa-arrow-down"></i>
+				<i class="fas fa-arrow-down mov hidden bounce"></i>
 			</div>
 
 			<form action="tele.php" method="POST">

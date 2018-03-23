@@ -239,7 +239,7 @@ a.photo:hover img{
 
 .iconArrow {
 	text-align: center;
-	font-size: 32px;
+	font-size: 40px;
 	color: #542B87;
 }
 
@@ -308,6 +308,9 @@ footer img {
 	padding-left: 60px;
 }
 
+.hidden {
+	visibility: hidden;
+}
 
 
 
