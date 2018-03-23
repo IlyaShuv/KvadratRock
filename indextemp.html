@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Квадрат рока 2018</title>
+
+	<meta charset="utf-8">
+
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
+	<link rel="icon" type="video/png" href="img/favicon.png">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+
+	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l" crossorigin="anonymous"></script> 
+	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/brands.js" integrity="sha384-sCI3dTBIJuqT6AwL++zH7qL8ZdKaHpxU43dDt9SyOzimtQ9eyRhkG3B7KMl6AO19" crossorigin="anonymous"></script> 
+	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="JS/jquery.fancybox.min.js"></script>
+
+	<script type="text/javascript" src="JS/confirm.js"></script>
+	<script type="text/javascript" src="JS/scroll.js"></script>
+
+	<script>
+		$(document).ready(function() {
+			$("a.photo").fancybox({
+				transitionIn: 'elastic',
+				transitionOut: 'elastic',
+				backFocus: false,
+				arrows: true,
+				loop: true,
+				buttons : [
+        'slideShow',
+        'fullScreen',
+        //'download',
+        //'zoom',
+        'close'
+    ],
+			});
+		});
+	</script>
+
+	<script>
+		Confirm();
+		scrollAnimate();
+	</script>
+</head>
+
+<body>
+
+	<header>
+		<div class="container">
+
+			<nav>
+				<ul class="menu animated fadeInDown">
+					<li>
+						<a class="menuItem" href="#schedule">ПРОГРАММА</a>
+					</li>
+					<li>
+						<a class="menuItem" href="#place">МЕСТО ПРОВЕДЕНИЯ</a>
+					</li>
+					<li>
+						<a class="menuItem" href="#contacts">КОНТАКТЫ</a>
+					</li>
+					<li>
+						<a class="reg" href="#reg" class="reg">РЕГИСТРАЦИЯ</a>
+					</li>
+					<li>
+						<p>+7 926 132 44 40</p>
+					</li>
+				</ul>
+			</nav>
+
+			<img class='mainLogo' src="img/logo.png">
+			<h1 class="animated fadeIn">Квадрат рока 2018</h1>
+			<p class = "headDiscr medText">Третий ежегодный фестиваль школьных рок-групп</p>
+			<p class="center smallText animated slideInUp">25 апреля | клуб Вольта</p>
+
+		</div>
+	</header>
+
+	<section id="about">
+		<div class="container">
+
+			<p class="medText center aboutMain">Квадрат рока - музыкальный фестиваль, созданный специально для школьников.</p>
+			<div class="links">
+				<a href="http://vk.com/kvadratrock"><i class="fab fa-vk iconSocial mov hidden fadeIn"></i></a>
+				<a href="http://instagram.com/kvadratrock"><i class="fab fa-instagram iconSocial mov hidden fadeIn"></i></a>
+			</div>
+			
+			<div class="center mainVideo">
+				<video class="center" width="85%" controls="controls" poster="img/poster.png">
+					<source src="video/kvadratrock.mp4" type="video/mp4">
+				</video>
+			</div>
+
+		</div>
+	</section>
+
+	<a name="schedule"></a>
+	<section id="program">
+		<div class="container">
+
+			<h2 class="bigText center">Программа</h2>
+			<p class="smallText center mov hidden fadeIn">25 апреля</p>
+
+			<table align="center">
+				<tr>
+					<td>14:00</td>
+					<td><img src="img/eguitar.png"></td>
+					<td class="member">Открытие фестиваля</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td class="smallText">Комментарии...</td>
+				</tr>
+				<tr>
+					<td>15:00</td>
+					<td><img src="img/eguitar.png"></td>
+					<td class="member">Коллектив 1</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td class="smallText">Комментарии...</td>
+				</tr>
+				<tr>
+					<td>16:00</td>
+					<td><img src="img/eguitar.png"></td>
+					<td class="member">Коллектив 2</td>
+				</tr>
+				<tr>
+				</tr>
+				<tr>
+					<td>17:00</td>
+					<td><img src="img/eguitar.png"></td>
+					<td class="member">Коллектив 3</td>
+				</tr>
+				<tr>
+				</tr>
+				<tr>
+					<td>21:00</td>
+					<td><img src="img/eguitar.png"></td>
+					<td class="member">Закрытие фестиваля</td>
+				</tr>
+			</table>
+
+		</div>
+	</section>
+
+	<section id="photo-wall">
+		<div class="container">
+			
+			<h2 class="bigText center"> Как это было</h2>
+			
+			<div class="gallery">
+			<a rel="gallery" class="photo" href="img/gallery/1.jpg"><img src="img/gallery/1.jpg" width="250" alt=""></a>
+			<a rel="gallery" class="photo" href="img/gallery/3.jpg"><img src="img/gallery/3.jpg" width="250" alt=""></a>
+			<a rel="gallery" class="photo" href="img/gallery/7.jpg"><img src="img/gallery/7.jpg" width="250" alt=""></a><br>
+
+			<a rel="gallery" class="photo" href="img/gallery/2.jpg"><img src="img/gallery/2.jpg" width="250" alt=""></a>
+			<a rel="gallery" class="photo" href="img/gallery/8.jpg"><img src="img/gallery/8.jpg" width="250" alt=""></a>
+			<a rel="gallery" class="photo" href="img/gallery/4.jpg"><img src="img/gallery/4.jpg" width="250" alt=""></a><br>
+
+			<a rel="gallery" class="photo" href="img/gallery/5.jpg"><img src="img/gallery/5.jpg" width="250" alt=""></a>
+			<a rel="gallery" class="photo" href="img/gallery/9.jpg"><img src="img/gallery/9.jpg" width="250" alt=""></a>
+			<a rel="gallery" class="photo" href="img/gallery/11.jpg"><img src="img/gallery/11.jpg" width="250" alt=""></a><br>
+
+			<a rel="gallery" class="photo" href="img/gallery/10.jpg"><img src="img/gallery/10.jpg" width="250" alt=""></a>
+			<a rel="gallery" class="photo" href="img/gallery/6.jpg"><img src="img/gallery/6.jpg" width="250" alt=""></a>
+			<a rel="gallery" class="photo" href="img/gallery/12.jpg"><img src="img/gallery/12.jpg" width="250" alt=""></a><br>
+			</div>
+
+		</div>
+	</section>
+
+	<a name="place"></a>
+	<section id="place">
+		<div class="container">
+
+			<h2 class="bigText center">Место проведения</h2>
+			<p class="center">В 2018 году фестиваль Квадрат рока проходит<br>
+			в клубе Вольта, расположенного по адресу:
+			<br>Москва, Бумажный проезд 19, стр 3<br>
+			(м. Савёловская).<br></p>
+			<a class="mov hidden fadeIn" href="http://voltaclub.ru">voltaclub.ru</a>
+			<img src="http://voltaclub.ru/files/map2.png" alt="Схема прохода к клубу">
+
+		</div>
+	</section>
+
+	<a name="reg"></a>
+	<section id="reg">
+		<div class="container">
+
+			<h2 class="bigText center">Регистрация</h2>
+			<p class="center">Если вы хотите посетить наш фестиваль,<br>
+			пожалуйста зарегестрируйтесь через форму</p>
+			<div class="iconArrow">
+				<i class="fas fa-arrow-down mov hidden bounce"></i>
+			</div>
+
+			<form action="tele.php" method="POST">
+				<input class="inputRequest" type="text" name="userName" placeholder="Ваше имя" maxlength="100" required><br>
+				<input class="inputRequest" type="text" name="userSurname" placeholder="Ваша фамилия" maxlength="100" required><br>
+				<input class="inputRequest" type="text" name="userPhone" placeholder="Ваш телефон" maxlength="12" required><br>
+				<input class="inputRequest" type="text" name="userEmail" placeholder="Ваш E-mail" maxlength="100"><br>
+				<div class="confirm"><input type="checkbox" name="checkBox" id="agree" value="yes">
+				  Отправляя сообщение, я принимаю пользовательское
+				  соглашение и подтверждаю, что ознакомлен и согласен 
+					с политикой конфиденциальности данного сайта</div>
+				<button class="button" type="submit" id="continue">Отправить заявку</button>
+			</form>
+		
+		</div>
+	</section>
+
+
+	<a name="contacts"></a>
+	<section id="contacts">
+		<div class="container">
+			<h2 class="bigText center">Контакты</h2>
+			<p class="center">Контактный телефон: +7 926 312 44 40</p>
+			<p class="center">Леонид Иванов</p>
+			<p class="center">Почта: kvadratsolo...</p>
+		</div>
+	</section>
+
+	<footer>
+		<div class="container">
+			<p class="center">Партнеры:</p>
+			<div class="partners">
+				<a href="http://kvadratsolo.ru"><img src="img/logosolo.png"></a>
+				<a href="http://kvadratsolo.ru"><img src="img/eguitar.png"></a>
+			</div>
+		</div>
+	</footer>
+
+
+</body>
+
+</html>
