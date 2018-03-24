@@ -79,7 +79,8 @@ nav {
 .menu li {
 	float: left;
 	display: block;
-	margin-right: 28px;
+	margin-right: 14px;
+	margin-left: 14px;
 }
 
 .menuItem {
@@ -202,6 +203,10 @@ table img {
 
 a.photo:hover img{
 	border: 3px solid #754CA8;
+}
+
+.desktopHidden {
+	display: none;
 }
 
 #place {

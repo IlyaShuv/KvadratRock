@@ -1,8 +1,52 @@
 @media screen and (max-width: 1024px) {
 	.container {
-		border: solid thin yellow;
-		width: 750px;
+		width: 754px;
+
 	}	
+
+	.menu li p {
+		display: none;
+	}
+
+	.mainLogo {
+	margin-top: 8vh;
+	margin-bottom: 9vh;
+	width: 320px;
+	}
+
+	.desktopHidden {
+		display: inline-block;
+	}
+
+	.mobileHidden {
+		display: none;
+	}
+
+	.desktopHidden {
+		display: inline-block;
+	}
+
+	.mobileHidden {
+		display: none;
+	}
+
+	#place img {
+		width: 700px;
+		margin-left: 25px;
+	}
+
+	.inputRequest {
+		margin-left: 120px;
+		width: 500px;
+	}
+
+	.confirm {
+		margin-left: 74px;
+	}
+
+	.button {
+		margin-left: 230px;
+	}
 }
 
 @media screen and (max-width: 768px) {
