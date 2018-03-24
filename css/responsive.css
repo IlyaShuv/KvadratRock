@@ -1,0 +1,10 @@
+@media screen and (max-width: 1024px) {
+	.container {
+		border: solid thin yellow;
+		width: 750px;
+	}	
+}
+
+@media screen and (max-width: 768px) {
+	
+}
