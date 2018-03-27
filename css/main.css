@@ -61,6 +61,7 @@ body {
 
 header {
 	height: 100vh;
+	min-height: 700px;
 	background: #1A1414 url('../img/background2.png') no-repeat center center / cover;
 	color: white;
 	text-align: center;
@@ -72,7 +73,7 @@ nav {
 
 .menu {
 	padding: 0;
-	padding-top: 6px;
+	padding-top: 1vh;
 	margin: 0;
 }
 
@@ -115,8 +116,9 @@ nav {
 
 .mainLogo{
 	margin-top: 9vh;
-	margin-bottom: 6vh;
-	width: 320px;
+	margin-bottom: 7vh;
+	height: 40vh;
+	min-height: 300px;
 }
 
 h1 {
@@ -127,6 +129,7 @@ h1 {
 
 .headDiscr {
 	margin-top: 0;
+	margin-bottom: 6vh;
 }
 
 #about {
@@ -201,7 +204,7 @@ table img {
 	border: 3px solid #FFF;
 }
 
-a.photo:hover img{
+a.borderHoverPurple:hover img{
 	border: 3px solid #754CA8;
 }
 

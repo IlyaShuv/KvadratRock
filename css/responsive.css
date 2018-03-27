@@ -7,26 +7,20 @@
 	.menu li p {
 		display: none;
 	}
+	
+	header {
+		min-height: 740px;
+	}
 
-	.mainLogo {
-	margin-top: 8vh;
-	margin-bottom: 9vh;
-	width: 320px;
+	.headDiscr {
+		margin-bottom: 4vh;
 	}
 
 	.desktopHidden {
-		display: inline-block;
+		display: inline;
 	}
 
-	.mobileHidden {
-		display: none;
-	}
-
-	.desktopHidden {
-		display: inline-block;
-	}
-
-	.mobileHidden {
+	.tabletHidden {
 		display: none;
 	}
 
@@ -50,5 +44,101 @@
 }
 
 @media screen and (max-width: 768px) {
+
+	.container {
+		width: 320px;
+	}
+
+	.mobileHidden {
+		display: none;
+	}
+
+	.smallText{
+		font-size: 18px;
+	}
+
+	.medText{
+		font-size: 30px;
+	}
+
+	.bigText {
+		font-size: 40px;
+	}
+
+	nav {
+		padding-top: 2vh;
+	}
+
+	.menu li {
+		float: none;
+		margin-right: 0;
+		margin-left: 0;
+		margin-bottom: 12px;
+	}
+
+	.menuItem {
+		font-size: 20px;
+	}
+
+	.mainLogo{
+		margin-top: 4vh;
+		margin-bottom: 5vh;
+		height: 32vh;
+		min-height: 230px;
+	}
+
+	h1 {
+		font-size: 40px;
+	}
+
+	.links {
+		margin-bottom: 30px;
+	}
+
+	.aboutMain {
+		margin-bottom: 30px;
+	}
+
+	.mainVideo {
+		padding-bottom: 40px;
+		margin-right: 0;
+		margin-left: 0;
+	}
+
+	#place p {
+		margin-bottom: 30px;
+		font-size: 28px;
+	}
+
+	#place img {
+		width: 300px;
+		margin-left: 10px;
+	}
+
+	#reg p {
+		margin-bottom: 15px;
+	}
+
+	.inputRequest {
+		margin-left: 15px;
+		width: 270px;
+	}
+
+	.button {
+		margin-top: 5px;
+		margin-left: 24px;
+		width: 270px;
+	}
+
+	.confirm {
+		margin-top: 10px;
+		margin-bottom: 10px;
+		margin-left: 5px;
+		width: 290px;
+	}
+
+	#contacts p {
+		font-size: 26px;
+	}
 	
 }

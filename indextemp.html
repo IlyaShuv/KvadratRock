@@ -5,6 +5,7 @@
 	<title>Квадрат рока 2018</title>
 
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="css/responsive.css">
@@ -140,7 +141,7 @@
 			<h2 class="bigText center">Программа</h2>
 			<p class="smallText center mov hidden fadeIn">25 апреля</p>
 
-			<table align="center">
+			<table align="center" class="tabletHidden">
 				<tr>
 					<td>14:00</td>
 					<td><img src="img/eguitar.png"></td>
@@ -182,6 +183,21 @@
 				</tr>
 			</table>
 
+			<div class="desktopHidden">
+				<h3 class="center">14:00 Открытие фестиваля</h3>
+				<p class="center">Комментарии</p>
+
+				<h3 class="center">15:00 Коллектив 1</h3>
+				<p class="center">Комментарии</p>
+
+				<h3 class="center">16:00 Коллектив 2</h3>
+				<p class="center">Комментарии</p>
+
+				<h3 class="center">21:00 Закрытие фестиваля</h3>
+				<p class="center">Комментарии</p>
+				
+			</div>
+
 		</div>
 	</section>
 
@@ -191,22 +207,22 @@
 			<h2 class="bigText center"> Как это было</h2>
 			
 			<div class="gallery">
-			<a rel="gallery" class="photo" href="img/gallery/1.jpg"><img src="img/gallery/1.jpg" width="250" alt=""></a>
-			<a rel="gallery" class="photo" href="img/gallery/3.jpg"><img src="img/gallery/3.jpg" width="250" alt=""></a>
-			<a rel="gallery" class="photo" href="img/gallery/7.jpg"><img src="img/gallery/7.jpg" width="250" alt=""></a>
-			<a rel="gallery" class="photo desktopHidden" href="img/gallery/10.jpg"><img src="img/gallery/10.jpg" width="250" alt=""></a>
+			<a rel="gallery" class="photo borderHoverPurple" href="img/gallery/1.jpg"><img src="img/gallery/1.jpg" width="250" alt=""></a>
+			<a rel="gallery" class="photo borderHoverPurple mobileHidden" href="img/gallery/3.jpg"><img src="img/gallery/3.jpg" width="250" alt=""></a>
+			<a rel="gallery" class="photo borderHoverPurple" href="img/gallery/7.jpg"><img src="img/gallery/7.jpg" width="250" alt=""></a>
+			<a rel="gallery" class="photo borderHoverPurple desktopHidden" href="img/gallery/10.jpg"><img src="img/gallery/10.jpg" width="250" alt=""></a>
 
-			<a rel="gallery" class="photo" href="img/gallery/2.jpg"><img src="img/gallery/2.jpg" width="250" alt=""></a>
-			<a rel="gallery" class="photo" href="img/gallery/8.jpg"><img src="img/gallery/8.jpg" width="250" alt=""></a>
-			<a rel="gallery" class="photo" href="img/gallery/4.jpg"><img src="img/gallery/4.jpg" width="250" alt=""></a>
+			<a rel="gallery" class="photo borderHoverPurple" href="img/gallery/2.jpg"><img src="img/gallery/2.jpg" width="250" alt=""></a>
+			<a rel="gallery" class="photo borderHoverPurple" href="img/gallery/8.jpg"><img src="img/gallery/8.jpg" width="250" alt=""></a>
+			<a rel="gallery" class="photo borderHoverPurple" href="img/gallery/4.jpg"><img src="img/gallery/4.jpg" width="250" alt=""></a>
 
-			<a rel="gallery" class="photo" href="img/gallery/5.jpg"><img src="img/gallery/5.jpg" width="250" alt=""></a>
-			<a rel="gallery" class="photo" href="img/gallery/9.jpg"><img src="img/gallery/9.jpg" width="250" alt=""></a>
-			<a rel="gallery" class="photo" href="img/gallery/11.jpg"><img src="img/gallery/11.jpg" width="250" alt=""></a>
+			<a rel="gallery" class="photo borderHoverPurple mobileHidden" href="img/gallery/5.jpg"><img src="img/gallery/5.jpg" width="250" alt=""></a>
+			<a rel="gallery" class="photo borderHoverPurple mobileHidden" href="img/gallery/9.jpg"><img src="img/gallery/9.jpg" width="250" alt=""></a>
+			<a rel="gallery" class="photo borderHoverPurple" href="img/gallery/11.jpg"><img src="img/gallery/11.jpg" width="250" alt=""></a>
 
-			<a rel="gallery" class="photo mobileHidden" href="img/gallery/10.jpg"><img src="img/gallery/10.jpg" width="250" alt=""></a>
-			<a rel="gallery" class="photo" href="img/gallery/6.jpg"><img src="img/gallery/6.jpg" width="250" alt=""></a>
-			<a rel="gallery" class="photo" href="img/gallery/12.jpg"><img src="img/gallery/12.jpg" width="250" alt=""></a>
+			<a rel="gallery" class="photo borderHoverPurple tabletHidden" href="img/gallery/10.jpg"><img src="img/gallery/10.jpg" width="250" alt=""></a>
+			<a rel="gallery" class="photo borderHoverPurple" href="img/gallery/6.jpg"><img src="img/gallery/6.jpg" width="250" alt=""></a>
+			<a rel="gallery" class="photo borderHoverPurple" href="img/gallery/12.jpg"><img src="img/gallery/12.jpg" width="250" alt=""></a>
 			</div>
 
 		</div>
@@ -222,7 +238,8 @@
 			<br>Москва, Бумажный проезд 19, стр 3<br>
 			(м. Савёловская).<br></p>
 			<a class="mov hidden fadeIn hoverPurple" href="http://voltaclub.ru">voltaclub.ru</a>
-			<img src="http://voltaclub.ru/files/map2.png" alt="Схема прохода к клубу">
+			<div class="desktopHidden"><a class="photo" href="http://voltaclub.ru/files/map2.png"><img src="http://voltaclub.ru/files/map2.png" alt="Схема прохода к клубу"></a></div>
+			<div class="tabletHidden"><img src="http://voltaclub.ru/files/map2.png" alt="Схема прохода к клубу"></div>
 
 		</div>
 	</section>
@@ -258,9 +275,9 @@
 	<section id="contacts">
 		<div class="container">
 			<h2 class="bigText center">Контакты</h2>
-			<p class="center">Контактный телефон: +7 926 312 44 40</p>
+			<p class="center">Контактный телефон:<span> +7 926 312 44 40</span></p>
 			<p class="center">Леонид Иванов</p>
-			<p class="center">Почта: kvadratsolo...</p>
+			<p class="center">Почта: info@kvadratsolo.ru</p>
 		</div>
 	</section>
 
