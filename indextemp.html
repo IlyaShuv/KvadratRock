@@ -24,7 +24,22 @@
 
 	<script>
 		$(document).ready(function() {
-			$("a.photo").fancybox({
+			$("a.photoDesk").fancybox({
+				transitionIn: 'elastic',
+				transitionOut: 'elastic',
+				backFocus: false,
+				loop: true,
+				buttons : [
+        	'fullScreen',
+        	'close'
+    		],
+			});
+		});
+	</script>
+
+	<script>
+		$(document).ready(function() {
+			$("a.photoMob").fancybox({
 				transitionIn: 'elastic',
 				transitionOut: 'elastic',
 				backFocus: false,
@@ -199,24 +214,42 @@
 		<div class="container">
 			<h2 class="bigText center"> Как это было</h2>
 			
-			<div class="gallery">
-				<a data-fancybox="images" class="photo borderHoverPurple" href="img/gallery/1.jpg"><img src="img/gallery/1.jpg" width="250" alt="Фото"></a>
-				<a data-fancybox="images" class="photo borderHoverPurple mobileHidden" href="img/gallery/3.jpg"><img src="img/gallery/3.jpg" width="250" alt="Фото"></a>
-				<a data-fancybox="images" class="photo borderHoverPurple" href="img/gallery/7.jpg"><img src="img/gallery/7.jpg" width="250" alt="Фото"></a>
-				<a data-fancybox="images" class="photo borderHoverPurple desktopHidden" href="img/gallery/10.jpg"><img src="img/gallery/10.jpg" width="250" alt="Фото"></a>
+			<div class="gallery tabletHidden mobileHidden">
+				<a data-fancybox="images" class="photoDesk borderHoverPurple" href="img/gallery/1.jpg"><img src="img/gallery/1.jpg" width="250" alt="Фото"></a>
+				<a data-fancybox="images" class="photoDesk borderHoverPurple" href="img/gallery/3.jpg"><img src="img/gallery/3.jpg" width="250" alt="Фото"></a>
+				<a data-fancybox="images" class="photoDesk borderHoverPurple" href="img/gallery/7.jpg"><img src="img/gallery/7.jpg" width="250" alt="Фото"></a>
 
-				<a data-fancybox="images" class="photo borderHoverPurple" href="img/gallery/2.jpg"><img src="img/gallery/2.jpg" width="250" alt="Фото"></a>
-				<a data-fancybox="images" class="photo borderHoverPurple" href="img/gallery/8.jpg"><img src="img/gallery/8.jpg" width="250" alt="Фото"></a>
-				<a data-fancybox="images" class="photo borderHoverPurple" href="img/gallery/4.jpg"><img src="img/gallery/4.jpg" width="250" alt="Фото"></a>
+				<a data-fancybox="images" class="photoDesk borderHoverPurple" href="img/gallery/2.jpg"><img src="img/gallery/2.jpg" width="250" alt="Фото"></a>
+				<a data-fancybox="images" class="photoDesk borderHoverPurple" href="img/gallery/8.jpg"><img src="img/gallery/8.jpg" width="250" alt="Фото"></a>
+				<a data-fancybox="images" class="photoDesk borderHoverPurple" href="img/gallery/4.jpg"><img src="img/gallery/4.jpg" width="250" alt="Фото"></a>
 
-				<a data-fancybox="images" class="photo borderHoverPurple mobileHidden" href="img/gallery/5.jpg"><img src="img/gallery/5.jpg" width="250" alt="Фото"></a>
-				<a data-fancybox="images" class="photo borderHoverPurple mobileHidden" href="img/gallery/9.jpg"><img src="img/gallery/9.jpg" width="250" alt="Фото"></a>
-				<a data-fancybox="images" class="photo borderHoverPurple" href="img/gallery/11.jpg"><img src="img/gallery/11.jpg" width="250" alt=""></a>
+				<a data-fancybox="images" class="photoDesk borderHoverPurple" href="img/gallery/5.jpg"><img src="img/gallery/5.jpg" width="250" alt="Фото"></a>
+				<a data-fancybox="images" class="photoDesk borderHoverPurple" href="img/gallery/9.jpg"><img src="img/gallery/9.jpg" width="250" alt="Фото"></a>
+				<a data-fancybox="images" class="photoDesk borderHoverPurple" href="img/gallery/11.jpg"><img src="img/gallery/11.jpg" width="250" alt=""></a>
 
-				<a data-fancybox="images" class="photo borderHoverPurple tabletHidden" href="img/gallery/10.jpg"><img src="img/gallery/10.jpg" width="250" alt="Фото"></a>
-				<a data-fancybox="images" class="photo borderHoverPurple" href="img/gallery/6.jpg"><img src="img/gallery/6.jpg" width="250" alt="Фото"></a>
-				<a data-fancybox="images" class="photo borderHoverPurple" href="img/gallery/12.jpg"><img src="img/gallery/12.jpg" width="250" alt="Фото"></a>
+				<a data-fancybox="images" class="photoDesk borderHoverPurple" href="img/gallery/10.jpg"><img src="img/gallery/10.jpg" width="250" alt="Фото"></a>
+				<a data-fancybox="images" class="photoDesk borderHoverPurple" href="img/gallery/6.jpg"><img src="img/gallery/6.jpg" width="250" alt="Фото"></a>
+				<a data-fancybox="images" class="photoDesk borderHoverPurple" href="img/gallery/12.jpg"><img src="img/gallery/12.jpg" width="250" alt="Фото"></a>
 			</div>
+
+			<div class="gallery desktopHidden">
+				<a data-fancybox="images" class="photoMob borderHoverPurple" href="img/gallery/1.jpg"><img src="img/gallery/1.jpg" width="250" alt="Фото"></a>
+				<a data-fancybox="images" class="photoMob borderHoverPurple" href="img/gallery/3.jpg"><img src="img/gallery/3.jpg" width="250" alt="Фото"></a>
+
+				<a data-fancybox="images" class="photoMob borderHoverPurple" href="img/gallery/7.jpg"><img src="img/gallery/7.jpg" width="250" alt="Фото"></a>
+				<a data-fancybox="images" class="photoMob borderHoverPurple" href="img/gallery/10.jpg"><img src="img/gallery/10.jpg" width="250" alt="Фото"></a>
+
+				<a data-fancybox="images" class="photoMob borderHoverPurple" href="img/gallery/2.jpg"><img src="img/gallery/2.jpg" width="250" alt="Фото"></a>
+				<a data-fancybox="images" class="photoMob borderHoverPurple" href="img/gallery/8.jpg"><img src="img/gallery/8.jpg" width="250" alt="Фото"></a>
+				
+
+				<a data-fancybox="images" class="photoMob borderHoverPurple" href="img/gallery/4.jpg"><img src="img/gallery/4.jpg" width="250" alt="Фото"></a>
+				<a data-fancybox="images" class="photoMob borderHoverPurple" href="img/gallery/11.jpg"><img src="img/gallery/11.jpg" width="250" alt=""></a>
+
+				<a data-fancybox="images" class="photoMob borderHoverPurple" href="img/gallery/6.jpg"><img src="img/gallery/6.jpg" width="250" alt="Фото"></a>
+				<a data-fancybox="images" class="photoMob borderHoverPurple" href="img/gallery/12.jpg"><img src="img/gallery/12.jpg" width="250" alt="Фото"></a>
+			</div>
+
 
 		</div>
 	</section>
